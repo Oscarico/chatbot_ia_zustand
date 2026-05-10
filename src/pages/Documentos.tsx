@@ -6,7 +6,7 @@ import { generarPdf } from "../utils/generarPdf";
 import { generarDocx } from "../utils/generarDocx";
 import { generarXlsx } from "../utils/generarXlsx";
 
-export default function Documentos() {
+export const Documentos = () => {
   const documentos = useDocumentosStore((state) => state.documentos);
   const eliminarDocumento = useDocumentosStore(
     (state) => state.eliminarDocumento,
@@ -161,4 +161,4 @@ export default function Documentos() {
       </main>
     </div>
   );
-}
+};
