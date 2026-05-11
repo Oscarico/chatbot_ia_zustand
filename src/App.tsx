@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { IndexVentanaChat } from "./components/IndexVentanaChat";
-import Documentos from "./pages/Documentos";
+import { Documentos } from "./pages/Documentos";
 
 function App() {
   return (

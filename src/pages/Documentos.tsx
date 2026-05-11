@@ -79,6 +79,7 @@ export const Documentos = () => {
                       <div>
                         <input
                           type="text"
+                          aria-label="Nuevo título del documento"
                           value={nuevoTitulo}
                           onChange={(e) => setNuevoTitulo(e.target.value)}
                           className="text-sm bg-zinc-700 text-white px-2 py-1 rounded"
@@ -134,6 +135,7 @@ export const Documentos = () => {
 
                     <button
                       onClick={() => eliminarDocumento(doc.id)}
+                      aria-label={`Eliminar ${doc.titulo}`}
                       className="bg-red-600 hover:bg-red-700 px-3 py-1 rounded text-sm cursor-pointer"
                     >
                       Eliminar
